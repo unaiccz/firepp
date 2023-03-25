@@ -19,7 +19,7 @@ export const config = {
 
 // Initialize Firebase
 const app = initializeApp(config);
-const auth = getAuth(app);
+export const auth = getAuth(app);
 export  const llogin = ({email, password}) => {
   return signInWithEmailAndPassword(auth, email, password)
 }
